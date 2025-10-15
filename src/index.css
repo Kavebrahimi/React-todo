@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Handlee", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    padding: 3rem 0;
+    overflow-x: hidden;
+}
+@theme{
+    --font-caveat: "Caveat Brush", sans-serif;
+    --font-handlee: "Handlee", sans-serif;
+}
+@layer base {
+    body {
+        @apply bg-amber-100 font-handlee font-bold
+    }
+    button {
+        @apply cursor-pointer
+    }
+    h1 {
+        @apply font-bold text-4xl sm:text-5xl font-caveat text-center
+    }
+}
