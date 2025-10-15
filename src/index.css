@@ -19,8 +19,10 @@
 
 body{
     width: 100vw;
-    padding: 3rem 0;
+    padding: 4rem 0;
     overflow-x: hidden;
+    min-height: 100vh;
+    height: 100%;
 }
 @theme{
     --font-caveat: "Caveat Brush", sans-serif;
