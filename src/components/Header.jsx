@@ -5,15 +5,22 @@ export const Header = () => {
 
     const [ task, setTask ] = useState("");
     const {setTaskItems, taskItems} = useContext(TaskContext);
+    const [ error, setError ] = useState('');
 
     const handleSetTask = (e)=> {
         setTask(e.target.value)
     }
-    const handleAddTask = (e)=> {
-        e.preventDefault();
-        setTaskItems([...taskItems, { id:Math.random(), title:task, status:'undone' }]);
-        setTask('');
+    const handleAddTask = (e) => {
+        e.preventDefault(); // همیشه اول باید اینو بزاری
+        if (task.trim() !== '') {
+            setTaskItems([...taskItems, { id: Math.random(), title: task, status: 'undone' }]);
+            setTask('');
+            setError('');
+        } else {
+            setError('Task field can\'t be empty!');
+        }
     }
+
 
     return (
         <>
@@ -35,6 +42,7 @@ export const Header = () => {
                 </form>
 
             </div>
+            <p className={`text-center mt-1 text-sm text-red-500 transition-all duration-300 opacity-0 -translate-y-4 ${error !== '' ? 'translate-y-0 opacity-100' : ''}`}>{error}</p>
         </>
     )
 }
