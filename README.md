@@ -1,16 +1,41 @@
-# React + Vite
+# 📝 Mini React ToDo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-Currently, two official plugins are available:
+A simple **React + Vite ToDo List** with modern features using **Context, Hooks, and Tailwind CSS**.  
+Includes **add, delete, mark as done/undone tasks**, **animations**, and **empty input error handling**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Add tasks with animation  
+- Delete tasks with animation  
+- Mark tasks as **done** or **undone**  
+- Error handling for empty input field  
+- Dynamic task list rendering  
+- Responsive design with **Tailwind CSS**  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+
+![Screenshots](todo.png)  
+
+---
+
+## 🌐 Live Demo
+
+[Live Demo](https://kavebrahimi.github.io/React-todo/)  
+
+---
+
+## 💻 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Kavebrahimi/React-todo.git
+cd React-todo
