@@ -11,7 +11,7 @@ export const Header = () => {
         setTask(e.target.value)
     }
     const handleAddTask = (e) => {
-        e.preventDefault(); // همیشه اول باید اینو بزاری
+        e.preventDefault(); 
         if (task.trim() !== '') {
             setTaskItems([...taskItems, { id: Math.random(), title: task, status: 'undone' }]);
             setTask('');
